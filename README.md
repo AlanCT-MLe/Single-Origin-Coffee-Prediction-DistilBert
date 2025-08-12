@@ -2,7 +2,7 @@
 
 ## 📜 Overview
 This project investigates whether **text classification models** can accurately predict the origin of specialty coffee based solely on its *Blind Assessment*.  
-"Blind Assessments" are professional reviews by Q-Graders who evaluate coffee without knowing its origin.  
+"Blind Assessments" are professional reviews by Q-Graders who evaluate coffee without knowing its origin. The [report](https://github.com/AlanCT-MLe/Single-Origin-Coffee-Prediction-DistilBert/blob/main/Specialty%20Coffee%20Origin%20Classification.pdf) can be found within this repository.  
 
 Using a dataset of **1,954 reviews from 31 countries** scraped from [Coffee Review](https://www.coffeereview.com), we compare traditional machine learning methods and a transformer-based model for this challenging NLP task.
 
