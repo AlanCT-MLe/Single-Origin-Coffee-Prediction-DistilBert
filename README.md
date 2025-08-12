@@ -1,7 +1,7 @@
 # Specialty Coffee Origin Classification
 
 ## 📜 Overview
-This project explores whether **text classification models** can predict the origin of specialty coffee based only on its *Blind Assessment*.  
+This project investigates whether **text classification models** can accurately predict the origin of specialty coffee based solely on its *Blind Assessment*.  
 "Blind Assessments" are professional reviews by Q-Graders who evaluate coffee without knowing its origin.  
 
 Using a dataset of **1,954 reviews from 31 countries** scraped from [Coffee Review](https://www.coffeereview.com), we compare traditional machine learning methods and a transformer-based model for this challenging NLP task.
@@ -54,7 +54,7 @@ Using a dataset of **1,954 reviews from 31 countries** scraped from [Coffee Revi
 
 ---
 
-## 📈 Results
+## Results
 
 | Dataset | Dummy | Multinomial NB | NuSVC | Distil-BERT |
 |---------|-------|----------------|-------|-------------|
@@ -70,22 +70,5 @@ Using a dataset of **1,954 reviews from 31 countries** scraped from [Coffee Revi
 ## 🔍 Insights
 - Imbalanced data reduces performance significantly.
 - High overlap in descriptive terms limits model discriminability.
-- Possible taster bias in blind assessments.
-
+- The description from the blind assessment has bias, which is supported by this [study](https://onlinelibrary.wiley.com/doi/10.1111/joss.12827). This explains why all the models performed poorly.
 ---
-
-## 📦 How to Run
-
-```bash
-# Clone repository
-git clone https://gitlab.liu.se/alaca734/text-mining.git
-cd text-mining
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Example: Train NuSVC
-python train_nusvc.py
-
-# Example: Fine-tune Distil-BERT
-python train_distilbert.py
